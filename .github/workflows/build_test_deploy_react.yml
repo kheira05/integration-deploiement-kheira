@@ -61,3 +61,8 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployement
         uses: actions/deploy-pages@v2
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v4.0.1
+        env:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          slug: kheira05/integration-deploiement-kheira
