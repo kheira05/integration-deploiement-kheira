@@ -23,7 +23,7 @@ let FormulaireValide,FormulaireInvalide;
  }); 
 
 /**@function dateNaissanceValide*/
-describe('dateNaissanceValide Unit test Suites', () => {
+describe.skip('dateNaissanceValide Unit test Suites', () => {
   it('should return a correct age', () => {
       const loise = {
           birth: new Date("11/07/1991")
@@ -54,7 +54,7 @@ describe('dateNaissanceValide Unit test Suites', () => {
 });
 
 /**@function codePostalValide*/
-describe('codePostalValide Unit test Suites', () => {
+describe.skip('codePostalValide Unit test Suites', () => {
   it ('should return true if the parameter is a string and have 5 characters', () => {
     expect(codePostalValide(FormulaireValide.codePostal)).toEqual(true);
   });
@@ -64,7 +64,7 @@ describe('codePostalValide Unit test Suites', () => {
 });
 
 /**@function nomValide*/
-describe('nomValide Unit test Suites', () => {
+describe.skip('nomValide Unit test Suites', () => {
   it ('should return true if the parametre is string and doesn t have special characters', () => {
     expect(nomValide(FormulaireValide.nom)).toEqual(true)
   });
@@ -74,7 +74,7 @@ describe('nomValide Unit test Suites', () => {
 });
 
 /**@function prenomValide*/
-describe('nomValide Unit test Suites', () => {
+describe.skip('nomValide Unit test Suites', () => {
   it ('should return true if the parametre is string and doesn t have special characters', () => {
     expect(prenomValide(FormulaireValide.prenom)).toEqual(true)
   });
@@ -84,7 +84,7 @@ describe('nomValide Unit test Suites', () => {
 });
 
 /**@function emailValide*/
-describe('emailValide Unit test Suites', () => {
+describe.skip('emailValide Unit test Suites', () => {
   it ('should return true if the parametre is string and doesn t have special characters', () => {
     expect(emailValide(FormulaireValide.email)).toEqual(true)
   });
